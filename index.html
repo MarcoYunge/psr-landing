@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Préstamo Salarial Responsable | PSR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Lato', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f9fafb;
+    }
+    header {
+      background: #1E3A8A;
+      color: white;
+      padding: 1.5rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 5rem 5%;
+      text-align: center;
+      background: linear-gradient(135deg, #1E3A8A 0%, #10B981 100%);
+      color: white;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      background: white;
+      color: #1E3A8A;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.5rem;
+      transition: 0.3s;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .features {
+      padding: 5rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .features h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #1E3A8A;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .card h3 {
+      color: #1E3A8A;
+      margin: 1rem 0;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .waitlist {
+      background: #f1f5f9;
+      padding: 4rem 5%;
+      text-align: center;
+    }
+    .waitlist h2 {
+      color: #1E3A8A;
+      margin-bottom: 1rem;
+    }
+    .form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .form input {
+      flex: 1;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PSR</div>
+    <nav>
+      <a href="#como">Cómo funciona</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Crédito justo para quienes trabajan todos los días</h1>
+    <p>Préstamos rápidos, transparentes y sin garantías. Solo necesitas tu sueldo.</p>
+    <a href="#waitlist" class="btn">Quiero ser de los primeros</a>
+    <a href="#como" class="btn btn-outline">Conoce cómo funciona</a>
+  </section>
+
+  <section class="features" id="como">
+    <h2>Cómo funciona en 3 pasos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/1E3A8A/document.png" alt="Sube tu nómina" width="80"/>
+        <h3>1. Sube tu nómina</h3>
+        <p>Conecta tu cuenta o carga tu comprobante de sueldo.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/1E3A8A/smartphone.png" alt="Préstamo aprobado" width="80"/>
+        <h3>2. Aprobación en minutos</h3>
+        <p>Recibe tu oferta preaprobada según tu capacidad de pago.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/1E3A8A/money.png" alt="Recibe el dinero" width="80"/>
+        <h3>3. Dinero en tu cuenta</h3>
+        <p>Desembolso directo a tu banco o billetera digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist" id="waitlist">
+    <h2>¿Quieres acceder al primer préstamo?</h2>
+    <p>Regístrate y sé de los primeros en probar PSR. Sin spam, solo buenas noticias.</p>
+    <form class="form" action="#" method="post">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+      <button type="submit" class="btn">Quiero entrar</button>
+    </form>
+  </section>
+
+  <section class="features" id="beneficios">
+    <h2>Por qué elegir PSR</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>✅ Sin garantías</h3>
+        <p>Tu sueldo es tu respaldo.</p>
+      </div>
+      <div class="card">
+        <h3>⏱️ 5 minutos</h3>
+        <p>Aprobación ultrarrápida.</p>
+      </div>
+      <div class="card">
+        <h3>🎓 Educación financiera</h3>
+        <p>Aprende a manejar tus finanzas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Préstamo Salarial Responsable © 2025</p>
+    <p>Contacto: hola@prestamosalarial.cl | +56 9 1234 5678</p>
+    <p>Santiago, Chile</p>
+  </footer>
+
+</body>
+</html>
